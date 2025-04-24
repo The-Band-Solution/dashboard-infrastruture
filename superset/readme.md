@@ -1,0 +1,1 @@
+dremio+flight://myUserID:myPAT@myHost:32010/Samples?UseEncryption=false

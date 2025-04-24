@@ -1,0 +1,15 @@
+services:
+  extract_devops:
+    container_name: theband_dashboard
+    build: .
+    image: theband_dashboard
+    ports:
+      - "8088:8088"
+    environment:
+      - SUPERSET_SECRET_KEY=${SUPERSET_SECRET_KEY}
+    env_file:
+      - .env
+networks: 
+  default: 
+    name: base-infrastrutrure
+    external: true
